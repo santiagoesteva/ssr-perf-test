@@ -1,0 +1,15 @@
+header {
+  background-color: #282c34;
+
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+main {
+  background-color: lightblue;
+}
+
+footer {
+  background-color: pink;
+  font-size: calc(10px + 2vmin);
+}
