@@ -42,18 +42,29 @@ From a purely server's performance perspective, comparing complex dom pages 2000
 
 Assuming an API response takes 3 seconds, what does the user experience look like? What is the perceived speed?
 
-- CSR + Suspense
-- SSR - NextJS pages router
-- SSR - NextJS app router
-- SSR - Remix
-- SSR + Streaming / Suspense - Nextjs app router
-- SSR + Streaming / Suspense - Remix 
-
-Lighthouse Reports and Filmstrips
-
         npx lighthouse http://localhost:3004/1500 --throttling-method=provided --preset desktop 
 
-Tools User
+- CSR + Suspense - Perf Score 93
+![CSR](/reports/user-perception/csr-suspense-delayed.png)
+
+- SSR - NextJS pages router - Perf Score 58
+![Nextjs Page](/reports/user-perception/nextjs-pages-delayed.png)
+
+- SSR - NextJS app router - Perf Score 54
+![Nextjs Page](/reports/user-perception/nextjs-app-delayed.png)
+
+- SSR - Remix - Perf Score 65
+![Nextjs Page](/reports/user-perception/remix-delayed.png)
+ 
+- SSR + Streaming / Suspense - Nextjs app router - Perf Score 77
+![Nextjs Page](/reports/user-perception/nextjs-app-streaming-delayed.png)
+
+- SSR + Streaming / Suspense - Remix - Perf Score 93
+![Nextjs Page](/reports/user-perception/remix-streaming-delayed.png)
+
+Lighthouse full Reports can be found [here](/reports/lighthouse)
+
+### Tools Used
 - OHA
 - Lighthouse
 - binserve - RUST super fast static server
