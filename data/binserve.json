@@ -1,0 +1,13 @@
+{
+  "server": {
+    "host": "127.0.0.1:8080"
+  },
+  "routes": {},
+  "static": {
+    "directory": ".",
+    "served_from": "/"
+  },
+  "insert_headers": {
+    "Access-Control-Allow-Origin": "*"
+  }
+}
