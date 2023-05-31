@@ -24,7 +24,7 @@ const Pokemon = ({ pokemon }) => {
   );
 };
 
-async function Pokemons({ count }) {
+export default async function Home({ params: { count } }) {
   const data = await getData({ count });
 
   return (
@@ -39,15 +39,5 @@ async function Pokemons({ count }) {
           );
         })}
     </div>
-  );
-}
-
-export default async function Home({ params: { count } }) {
-  return (
-    <>
-      <Suspense fallback={<div>Loading...</div>}>
-        <Pokemons count={count} />
-      </Suspense>
-    </>
   );
 }
