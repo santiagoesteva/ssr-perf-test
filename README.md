@@ -1,6 +1,14 @@
 # ssr-perf-test
 Comparison between different UI rendering architectures
 
+
+### Tools Used
+- OHA
+- Lighthouse
+- binserve - RUST super fast static server
+
+## Stress Testing the server
+
 From a purely server's performance perspective, comparing complex dom pages 2000 elements
 
 - SSR - NextJS app router 
@@ -39,6 +47,7 @@ From a purely server's performance perspective, comparing complex dom pages 2000
           Average:      0.3407 secs
           Requests/sec: 141.7652
 
+## Perceived Speed
 
 Assuming an API response takes 3 seconds, what does the user experience look like? What is the perceived speed?
 
@@ -64,7 +73,3 @@ Assuming an API response takes 3 seconds, what does the user experience look lik
 
 Lighthouse full Reports can be found [here](/reports/lighthouse)
 
-### Tools Used
-- OHA
-- Lighthouse
-- binserve - RUST super fast static server
