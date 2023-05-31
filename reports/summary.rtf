@@ -1,0 +1,65 @@
+{\rtf1\ansi\ansicpg1252\cocoartf2709
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fswiss\fcharset0 Helvetica;}
+{\colortbl;\red255\green255\blue255;}
+{\*\expandedcolortbl;;}
+\margl1440\margr1440\vieww11520\viewh8400\viewkind0
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+
+\f0\fs24 \cf0 From a purely server \'92s performance perspective, comparing complex dom pages 2000 elements:\
+\
+- SSR - NextJS app router \
+\
+oha -z 5s http://localhost:3001/no-fetch/2000\
+\
+Summary:\
+  Success rate: 1.0000\
+  Total:        5.0023 secs\
+  Slowest:      3.2468 secs\
+  Fastest:      0.2418 secs\
+  Average:      1.7185 secs\
+  Requests/sec: 25.9880\
+\
+- SSR - NextJS pages router \
+\
+oha -z 5s http://localhost:3000/no-fetch/2000\
+\
+Summary:\
+  Success rate: 1.0000\
+  Total:        5.0017 secs\
+  Slowest:      1.4848 secs\
+  Fastest:      0.4902 secs\
+  Average:      0.6300 secs\
+  Requests/sec: 75.1743\
+\
+- SSR - Remix (ExpressJS out-of-the-box)\
+\
+oha -z 5s http://localhost:3002/no-fetch/2000\
+\
+Summary:\
+  Success rate: 1.0000\
+  Total:        5.0012 secs\
+  Slowest:      0.4748 secs\
+  Fastest:      0.3029 secs\
+  Average:      0.3407 secs\
+  Requests/sec: 141.7652\
+\
+\
+Assuming an API response takes 3 seconds, what does the user experience look like? What is the perceived speed?\
+\
+- CSR + Suspense\
+- SSR - NextJS pages router\
+- SSR - NextJS app router\
+- SSR - Remix\
+- SSR + Streaming / Suspense - Nextjs app router\
+- SSR + Streaming / Suspense - Remix \
+\
+\
+Add lighthouse report?\
+\
+\uc0\u10095   npx lighthouse http://localhost:3004/1500 --throttling-method=provided --preset desktop \
+\
+\
+Tools User\
+- OHA\
+- Lighthouse\
+- binserve - RUST super fast static server}
