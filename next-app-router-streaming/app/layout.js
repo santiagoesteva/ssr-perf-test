@@ -13,9 +13,11 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body className={inter.className}>
         <header>Header</header>
+        <main>
         <h1>Pokemon</h1>
 
         {children}
+        </main>
         <footer>Footer</footer>
       </body>
     </html>
