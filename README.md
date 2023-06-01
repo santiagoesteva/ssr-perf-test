@@ -54,7 +54,7 @@ Assuming an API response takes 3 seconds, what does the user experience look lik
 
         npx lighthouse http://localhost:3004/1500 --throttling-method=provided --preset desktop 
 
-- CSR + Suspense - Perf Score 93
+- CSR + Suspense - Perf Score 93 - Prod build but not very perfomant server
 ![CSR](/reports/user-perception/csr-suspense-delayed.png)
 
 - SSR - NextJS pages router - Perf Score 62 - Prod setup
