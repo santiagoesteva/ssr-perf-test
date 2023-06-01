@@ -11,41 +11,42 @@ Comparison between different UI rendering architectures
 
 From a purely server's performance perspective, comparing complex dom pages 2000 elements
 
-- SSR - NextJS app router 
+- SSR - NextJS app router - PROD setup
 
         oha -z 5s http://localhost:3001/no-fetch/2000
-
+        
         Summary:
-          Success rate: 1.0000
-          Total:        5.0023 secs
-          Slowest:      3.2468 secs
-          Fastest:      0.2418 secs
-          Average:      1.7185 secs
-          Requests/sec: 25.9880
+                Success rate: 1.0000
+                Total:        5.0010 secs
+                Slowest:      0.9489 secs
+                Fastest:      0.4462 secs
+                Average:      0.5359 secs
+                Requests/sec: 88.5826
 
-- SSR - NextJS pages router 
+- SSR - NextJS pages router - PROD setup
 
         oha -z 5s http://localhost:3000/no-fetch/2000
-
+        
         Summary:
-          Success rate: 1.0000
-          Total:        5.0017 secs
-          Slowest:      1.4848 secs
-          Fastest:      0.4902 secs
-          Average:      0.6300 secs
-          Requests/sec: 75.1743
+                Success rate: 1.0000
+                Total:        5.0019 secs
+                Slowest:      0.6635 secs
+                Fastest:      0.1222 secs
+                Average:      0.2893 secs
+                Requests/sec: 167.9377
 
-- SSR - Remix (ExpressJS out-of-the-box)
+
+- SSR - Remix (ExpressJS PROD)
 
         oha -z 5s http://localhost:3002/no-fetch/2000
 
         Summary:
           Success rate: 1.0000
-          Total:        5.0012 secs
-          Slowest:      0.4748 secs
-          Fastest:      0.3029 secs
-          Average:      0.3407 secs
-          Requests/sec: 141.7652
+          Total:        5.0016 secs
+          Slowest:      0.2006 secs
+          Fastest:      0.0421 secs
+          Average:      0.0964 secs
+          Requests/sec: 515.8332
 
 ## Perceived Speed
 
