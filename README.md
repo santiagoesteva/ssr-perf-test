@@ -81,8 +81,8 @@ Assuming an API response takes 3 seconds, what does the user experience look lik
 - SSR - Remix - Perf Score 65 - Prod setup
 ![Nextjs Page](/reports/user-perception/remix-delayed.png)
  
-- SSR + Streaming / Suspense - Nextjs app router - Perf Score Prod Server 92
-![Nextjs Page](/reports/user-perception/nextjs-app-streaming-delayed-prod.png)
+- SSR + Streaming / Suspense - Nextjs app router - Perf Score Prod Server 100
+![Nextjs Page](/reports/user-perception/nextjs-app-streaming-delayed-prod-latest.png)
 
 - SSR + Streaming / Suspense - Remix - Perf Score Prod Server 93
 ![Nextjs Page](/reports/user-perception/remix-streaming-delayed.png)
