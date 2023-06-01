@@ -57,19 +57,19 @@ Assuming an API response takes 3 seconds, what does the user experience look lik
 - CSR + Suspense - Perf Score 93
 ![CSR](/reports/user-perception/csr-suspense-delayed.png)
 
-- SSR - NextJS pages router - Perf Score 58
+- SSR - NextJS pages router - Perf Score 58 - DEV setup
 ![Nextjs Page](/reports/user-perception/nextjs-pages-delayed.png)
 
-- SSR - NextJS app router - Perf Score 54
+- SSR - NextJS app router - Perf Score 54 - DEV setup
 ![Nextjs Page](/reports/user-perception/nextjs-app-delayed.png)
 
-- SSR - Remix - Perf Score 65
+- SSR - Remix - Perf Score 65 - DEV setup
 ![Nextjs Page](/reports/user-perception/remix-delayed.png)
  
-- SSR + Streaming / Suspense - Nextjs app router - Perf Score Dev Server: 77 , Prod Server 92
+- SSR + Streaming / Suspense - Nextjs app router - Perf Score Prod Server 92
 ![Nextjs Page](/reports/user-perception/nextjs-app-streaming-delayed-prod.png)
 
-- SSR + Streaming / Suspense - Remix - Perf Score 93
+- SSR + Streaming / Suspense - Remix - Perf Score Prod Server 93
 ![Nextjs Page](/reports/user-perception/remix-streaming-delayed.png)
 
 Lighthouse full Reports can be found [here](/reports/lighthouse)
