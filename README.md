@@ -47,6 +47,21 @@ From a purely server's performance perspective, comparing complex dom pages 2000
           Fastest:      0.0421 secs
           Average:      0.0964 secs
           Requests/sec: 515.8332
+          
+Are any of the above amazing figures? Not really,
+
+| Name                | Requests Per Second | Requests Total | Memory Usage |
+|---------------------|--------------------|----------------|--------------|
+| Node Js             | 3233.377739        | 97772          | 105MB        |
+| Spring JVM          | 4457.39441         | 134162         | 675MB        |
+| Spring Native Image | 3854.41882         | 116267         | 211MB        |
+| Rust Rocket         | 5592.44295         | 168573         | 48MB         |
+| Rust Actix          | 5312.356065        | 160310         | 33.5MB       |
+| Go Echo             | 13545.859602       | 407254         | 72.1MB       |
+
+
+[Source](https://medium.com/@alexeynovikov_89393/ultimate-2023-web-server-benchmark-nodejs-vs-java-vs-rust-vs-go-e367d932f699)
+          
 
 ## Perceived Speed
 
